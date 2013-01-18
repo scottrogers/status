@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @launch_status.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @launch_status.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_launch_status_path(@launch_status) %> |
+<%= link_to 'Back', launch_statuses_path %>

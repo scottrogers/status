@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  started: 2013-01-12 15:24:42
+  ended: 2013-01-12 15:24:42
+  about: MyText
+  status: MyString
+  progress: 9.99
+  user: 
+
+two:
+  title: MyString
+  started: 2013-01-12 15:24:42
+  ended: 2013-01-12 15:24:42
+  about: MyText
+  status: MyString
+  progress: 9.99
+  user: 

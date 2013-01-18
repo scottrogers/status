@@ -1,0 +1,35 @@
+<h1>Listing features</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Started</th>
+    <th>Ended</th>
+    <th>About</th>
+    <th>Status</th>
+    <th>Progress</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @features.each do |feature| %>
+  <tr>
+    <td><%= feature.title %></td>
+    <td><%= feature.started %></td>
+    <td><%= feature.ended %></td>
+    <td><%= feature.about %></td>
+    <td><%= feature.status %></td>
+    <td><%= feature.progress %></td>
+    <td><%= feature.user.email if feature.user %></td>
+    <td><%= link_to 'Show', feature %></td>
+    <td><%= link_to 'Edit', edit_feature_path(feature) %></td>
+    <td><%= link_to 'Destroy', feature, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Feature', new_feature_path %>

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @feature.title %>
+</p>
+
+<p>
+  <b>Started:</b>
+  <%= @feature.started %>
+</p>
+
+<p>
+  <b>Ended:</b>
+  <%= @feature.ended %>
+</p>
+
+<p>
+  <b>About:</b>
+  <%= @feature.about %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @feature.launch_status.name %>
+</p>
+
+<p>
+  <b>Progress:</b>
+  <%= @feature.progress %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @feature.user.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_feature_path(@feature) %> |
+<%= link_to 'Back', features_path %>

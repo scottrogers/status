@@ -1,0 +1,25 @@
+<%= form_for(@launch_status) do |f| %>
+  <% if @launch_status.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@launch_status.errors.count, "error") %> prohibited this launch_status from being saved:</h2>
+
+      <ul>
+      <% @launch_status.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
