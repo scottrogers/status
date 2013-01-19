@@ -9,6 +9,8 @@ Status::Application.routes.draw do
 
   root :to => 'foyer#index'
 
+  match "admin/" => "admin#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

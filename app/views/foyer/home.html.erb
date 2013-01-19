@@ -350,6 +350,7 @@ body {
 
 
 </style>
+
 <div class="arrivals-board">
 
   <h1>Arrivals</h1>
@@ -364,7 +365,6 @@ body {
   <ul>
     <% if !@features.blank? %>
       <% for i in @features %>
-
            <li class="project tt">
              <h2>
               <span class="title">
@@ -385,129 +385,10 @@ body {
            <p class="crew">
             <span class="label">Crew:</span>
              <span class="person"><%= i.user.email if i.user %></span>
-             <span class="person">Werner</span>
-             <span class="person">Christian</span>
            </p>
            <p class="eta"><span class="label">Status:</span>Released on October 3rd, 2012. <a href="http://support.culturedcode.com/customer/portal/articles/174828" style="font-size: smaller; color: #999999; hover: none">Release Notes</a></p>
          </li>
       <% end %>
     <% else %>
-
-    <% end %>
-    <li class="project tt">
-      <h2><span class="title"><span class="strikethrough"></span><strong>Reminders &amp; Siri Integration on iOS 6</strong></span>
-      <span class="target"><span class="strikethrough"></span><strong>TT/TP 2.1</strong></span>
-      <span class="status blue glow"><span class="strikethrough"></span><strong>Landed</strong></span>
-    </h2>
-    <p class="info"><span class="label">Info:</span>Speak to Siri and have Reminders show up in your Things Inbox on iOS. This update also includes compatibility for iOS 6 and the taller iPhone 5 display.</p>
-    <p class="crew"><span class="label">Crew:</span>
-      <span class="person">Jace</span>
-      <span class="person">Werner</span>
-      <span class="person">Christian</span>
-    </p>
-    <p class="eta"><span class="label">Status:</span>Released on October 3rd, 2012. <a href="http://support.culturedcode.com/customer/portal/articles/174828" style="font-size: smaller; color: #999999; hover: none">Release Notes</a></p>
-  </li>
-  <li class="project tm"><h2><span class="title"><span class="strikethrough"></span><strong>Reminders &amp; Siri Compatibility (OS X 10.8)</strong></span>
-    <span title="Things for Mac" class="target"><span class="strikethrough"></span><strong>TM 2.1</strong></span>
-    <span class="status blue glow"><span class="strikethrough"></span><strong>Landed</strong></span>
-  </h2>
-  <p class="info"><span class="label">Info:</span>New Reminders &amp; Siri preference pane on OS X 10.8 to mirror the new settings available on iOS 6. Replaces the old Reminders preference pane.</p>
-  <p class="crew"><span class="label">Crew:</span>
-    <span class="person">Bartek</span>
-    <span class="person">Werner</span>
-    <span class="person">Christian</span>
-  </p>
-  <p class="eta"><span class="label">Status:</span>Released on October 3rd, 2012. <a href="http://support.culturedcode.com/customer/portal/articles/180371" style="font-size: smaller; color: #999999; hover: none">Release Notes</a></p>
-</li>
-<li class="project "><h2><span class="title"><span class="strikethrough"></span><strong>Website Redesign</strong></span>
-  <span class="target disabled"><span class="strikethrough"></span><strong>N/A</strong></span>
-  <span class="status blue glow"><span class="strikethrough"></span><strong>Landed</strong></span>
-</h2>
-<p class="info"><span class="label">Info:</span>We loved our website design when we released it. But that was almost 4 years ago. It's time for a change.</p>
-<p class="crew"><span class="label">Crew:</span>
-  <span class="person">Christian</span>
-</p>
-<p class="eta"><span class="label">Status:</span>Please remain seated until the aircraft comes to a complete stop.</p>
-</li>
-<li class="project "><h2><span class="title"><span class="strikethrough"></span><strong>Project Troy</strong></span>
-  <span class="target disabled"><span class="strikethrough"></span><strong>N/A</strong></span>
-  <span class="status green"><span class="strikethrough"></span><strong>En Route</strong></span>
-</h2>
-<p class="info"><span class="label">Info:</span>A secret project.</p>
-<p class="crew"><span class="label">Crew:</span>
-  <span class="person">Carolina</span>
-  <span class="person">Konstantin</span>
-  <span class="person">Michael</span>
-  <span class="person">Hari</span>
-  <span class="person">Connor</span>
-</p>
-<p class="eta"><span class="label">Status:</span>Sixth private beta in testing.</p>
-</li>
-<li class="project tm"><h2><span class="title"><span class="strikethrough"></span><strong> Teamwork</strong></span>
-  <span class="target disabled"><span class="strikethrough"></span><strong>N/A</strong></span>
-  <span class="status red"><span class="strikethrough"></span><strong>Holding</strong></span>
-</h2>
-<p class="info"><span class="label">Info:</span>Functionality to improve delegating tasks to a teammate.</p>
-<p class="crew"><span class="label">Crew:</span>
-  <span class="person">N/A</span>
-</p>
-<p class="eta"><span class="label">Status:</span>Will be based on our cloud solution.</p>
-</li>
-<li class="project "><h2><span class="title"><span class="strikethrough"></span><strong>Things Cloud</strong></span>
-  <span class="target"><span class="strikethrough"></span><strong>2.0</strong></span>
-  <span class="status white"><span class="strikethrough"></span><strong>Landed</strong></span>
-</h2>
-<p class="info"><span class="label">Info:</span>Stores your to-dos and updates them across all your Macs &amp; iOS devices.</p>
-<p class="crew"><span class="label">Crew:</span>
-  <span class="person">Everyone</span>
-</p>
-<p class="eta"><span class="label">Status:</span>Things Cloud is now available.</p>
-</li>
-<li class="project tt"><h2><span class="title"><span class="strikethrough"></span><strong> UI Facelift for iPhone</strong></span>
-  <span class="target"><span class="strikethrough"></span><strong>2.0</strong></span>
-  <span class="status white"><span class="strikethrough"></span><strong>Landed</strong></span>
-</h2>
-<p class="info"><span class="label">Info:</span>Refining the visual design of Things for iPhone and iPod touch.</p>
-<p class="crew"><span class="label">Crew:</span>
-  <span class="person">Christian</span>
-  <span class="person">Jace</span>
-  <span class="person">Werner</span>
-</p>
-<p class="eta"><span class="label">Status:</span>Things 2.0 is now available.</p>
-</li>
-<li class="project "><h2><span class="title"><span class="strikethrough"></span><strong>Daily Review</strong></span>
-  <span class="target"><span class="strikethrough"></span><strong>2.0</strong></span>
-  <span class="status white"><span class="strikethrough"></span><strong>Landed</strong></span>
-</h2>
-<p class="info"><span class="label">Info:</span>To-dos that are due or scheduled for today appear automatically in Daily Review at the top of your Today list.</p>
-<p class="crew"><span class="label">Crew:</span>
-  <span class="person">Bartek</span>
-  <span class="person"> Jace</span>
-  <span class="person"> Christian</span>
-</p>
-<p class="eta"><span class="label">Status:</span>Things 2.0 is now available.</p>
-</li>
-<li class="project tt"><h2><span class="title"><span class="strikethrough"></span><strong> Maintenance: iPad</strong></span>
-  <span title="Things for iPad" class="target"><span class="strikethrough"></span><strong>TiP 2.1.1</strong></span>
-  <span class="status white"><span class="strikethrough"></span><strong>Landed</strong></span>
-</h2>
-<p class="info"><span class="label">Info:</span>Improved stability and bug fixes.</p>
-<p class="crew"><span class="label">Crew:</span>
-  <span class="person">Jace</span>
-  <span class="person">Werner</span>
-</p>
-<p class="eta"><span class="label">Status:</span>Released on October 16th, 2012. <a href="http://support.culturedcode.com/customer/portal/articles/180381" style="font-size: smaller; color: #999999; hover: none">Release Notes</a></p>
-</li>
-<li class="project tt"><h2><span class="title"><span class="strikethrough"></span><strong> Maintenance: iPhone</strong></span>
-  <span title="Things for iPhone &amp; iPod touch" class="target"><span class="strikethrough"></span><strong>TT 2.1.1</strong></span>
-  <span class="status white"><span class="strikethrough"></span><strong>Landed</strong></span>
-</h2>
-<p class="info"><span class="label">Info:</span>Improved stability and bug fixes.</p>
-<p class="crew"><span class="label">Crew:</span>
-  <span class="person">Jace</span>
-  <span class="person">Werner</span>
-</p>
-<p class="eta"><span class="label">Status:</span>Released on October 16th, 2012. <a href="http://support.culturedcode.com/customer/portal/articles/174828" style="font-size: smaller; color: #999999; hover: none">Release Notes</a></p>
-</li>
-</ul>
+  <% end %>
 </div>
