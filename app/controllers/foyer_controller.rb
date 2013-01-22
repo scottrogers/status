@@ -5,6 +5,8 @@ class FoyerController < ApplicationController
 
     @features = Feature.all
 
+    @body_id = "home"
+
     render "home"
   end
 end

@@ -1,0 +1,21 @@
+/* Kill Defaults */
+
+html, body, p, ul, ol, dl, li, h1, h2, h3, h4, img  {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  border: 0;
+}
+
+a {
+  outline: none;
+}
+
+
+

@@ -1,10 +1,123 @@
 // Place all the styles related to the Features controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body {
-	background: #C5DC6C !important;
 
-	h1 {
-		color: #89B556;
-	}
+body {
+  background-color: #eee!important;
+
+
+  .container {
+    .header-container {
+      background: #272822;
+      width: 100%;
+      border-bottom: 1px solid #e9e9e9;
+
+      h1 {
+        color: #66d9ef;
+        padding: 25px 0 25px 0;
+        letter-spacing: 1px;
+        font-family: "Helvetica";
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0 auto;
+        width: 960px;
+        text-shadow: 0px 0px 7px rgba(102, 217, 239, 0.5);
+      }
+    }
+  }
+
+  .project-list {
+    background: #fff;
+    font: 16px/20px "Helvetica Neue",Helvetica,Arial,Sans-Serif;
+    display: block;
+    width: 960px;
+    margin: 20px auto;
+
+    h1 {
+      color: #272822;
+
+    }
+
+    .projects {
+      padding-top: 10px;
+
+      li:first-child {
+        // border-bottom: 1px solid #eee;
+      }
+      li+li {
+        border-top: 1px solid #eee;
+        padding-top: 10px;
+      }
+    }
+
+    .title {
+      padding-left: 10px;
+      width: 600px;
+      display: inline-block;
+    }
+    .target {
+      width: 160px;
+      display: inline-block;
+    }
+    .status {
+      width: 160px;
+      display: inline-block;
+    }
+
+    .legend {
+      -webkit-border-top-left-radius: 3px;
+      -webkit-border-top-right-radius: 3px;
+      text-transform: uppercase;
+      padding: 10px 0;
+      color: #fff;
+      text-shadow: 0 1px 1px #999;
+      font-size: 11px;
+      // margin-bottom: 10px;
+      // color: #f8266f;
+      background: #272822;
+
+      .title {
+        padding-left: 20px;
+      }
+    }
+
+
+
+    .project {
+      font-family: Helvetica;
+      // padding: 10px;
+      h2 {
+        padding: 10px 0 0 10px;
+
+        .title {
+          width: 595px;
+        }
+      }
+
+      p {
+        font-family: Helvetica;
+      }
+
+      .title {
+        // color: #a5e22d;
+      }
+
+      .info.title {
+        padding-top: 20px;
+        color: #272822;
+      }
+
+      .info {
+        padding: 10px 20px 20px 20px;
+        width: 920px;
+      }
+      .crew, .eta {
+        padding: 0 0 20px 20px;
+      }
+    }
+
+
+  }
 }
+
+// Glowing styles for status'
